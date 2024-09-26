@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.hero{
+    background-color:;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(14, 119, 93);
+}
+.hero{
+    
+    background: linear-gradient(270deg, #db80d2 0%, #7fdb88 100%);
+    min-height: 430px;
+    background-position: top center;
+    background-size: cover;
+}
+.container{
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+section{
+    margin: 80px auto;
+}
+.btn{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.primary-btn{
+    border:none;
+    background-color: rgb(228, 155, 19);
+    color: antiquewhite;
+}
+/* why we use falx and flex direction */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+}
+.main-content  .intro-heading{
+    font-size: 60px;
+}
+.main-content  .main-heading{
+    font-size: 100px;
+    margin-top: -20px;
+}
+.main-content p{
+    max-width: 300px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.main-content .primary-btn{
+    padding: 20px 40px 20px 40px;
+    border-radius: 30px 0px 30px 30px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.section-title h1{
+    font-size: 50px;
+    text-align: center;
+}
+.section-title .line{
+    width: 150px;
+    height: 4px;
+    border: 10px;
+    background: orange;
+    margin: auto;
+}
+.service img{
+    height: 300px;
+    width: 290px;
+    border-radius: 8px;
+    
+}
+.service{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 330px;
+    height: 450px;
+    padding: 18px;
+    border-radius: 18px;
+
+}
+.service p{
+    width: 290px;
+    text-align: left;
+}
+/* here have a bug */
+.services{
+    padding-left: 50px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+
+}
+.testimonial{
+    background: rgb(217, 239, 241);
+}
+/* why use flex- direction  */
+.testimonial .container{
+    display: flex;     
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.testimonial h1{
+    font-size: 50px;
+    font-family: 'f';
+}
+.testimonial .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+.testimonial .profile img{
+    height: 70px;
+    border-radius: 35px;
+}
+
+/* About us */
+.about-us .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.about-image img{
+    height: 350px;
+    border-radius: 170px 170px 170px 0px;
+}
+.about-image{
+    padding-left: 150px;
+}
+.about-content{
+    margin-top: 50px;
+}
+.about-content h4{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.about-content h1{
+    margin-top: 20px;
+}
+.about-content p{
+    margin-top: 20px;
+}
+.about-content .primary-btn{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Question Section */
+.question{
+    background-color: #f5d2f1;
+    height: 300px;
+    
+}
+.question .container{
+    text-align: center;
+}
+.question h1{
+    margin-top: 35px;
+    padding: 20px;
+     font-weight: bolder;
+     color:black;
+}
+.question p{
+    margin-bottom: 20px;
+    color:black;
+}
+.question .primary-btn{
+    border-radius: 15px 0px 15px 15px;
+    background-color: black;
+}
+/* foot */
+
+/* Midea Part */
+@media screen and (max-width:520px) {
+    .main-content{
+        margin-top: 50px;
+    }
+    .main-content  .main-heading{
+        font-size: 80px;
+        margin-top: -20px;
+    }
+    .main-content p{
+        max-width: 240px;
+        margin-bottom: 50px;
+    }
+}
